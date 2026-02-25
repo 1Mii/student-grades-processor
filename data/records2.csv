@@ -1,0 +1,35 @@
+2001;José Müller;15.75;15.25;15.0
+2002;  Espaco Inicial;10.5;10.5;10.5
+2003;Nome Muito Longo de Teste Para Verificar Limites;12.0;12.0;12.0
+2004;Nota com Virgula;15,5;10.0;10.0
+2005;Letras;A;B;C
+2006;Mec Invalido XYZ;10.5;10.5;10.5
+2007;Conceição São;14.9;14.9;14.9
+2008;Sem Notas;;;
+2009;   ;10.0;10.0;10.0
+2010;O'Connor;15.5;15.5;15.5
+2011;Jean-Luc;12.25;12.25;12.25
+2012;Nota Zero;0.0;0.0;0.0
+2013;Nota Maxima;20.0;20.0;20.0
+2014;Vazio; ; ; ; 
+2015;MEC Negativo;-2015;10.5;10.5;10.5
+2016;MEC Zero;0;10.0;10.0;10.0
+2017;Linha Incompleta;2017;Rui
+2018;Muitos Pontos-virgula;2018;Teste;10.5;10.5;10.5;;;
+2019;Espacos Entre Notas;2019;Espaco; 10.6 ; 10.7 ; 10.8 
+2020;E'ç'ã'à;15.0;15.0;15.0
+2021;Mário Araújo;19.9;19.9;19.9
+2022;12345;10.0;10.0;10.0
+2023;Zezé;20.0;20.0;20.0
+2024;Duas Notas;10.5;10.5
+2025;Calculo;10+5;10.0;10.0
+2026;Aspas;"Maria";10.5;10.5;10.5
+2027;Tabulacao;10.1;	10.2;10.3
+2028;Emoji;😀;10.0;10.0;10.0
+2029;Null Test;null;10.5;10.5;10.5
+2030;Valid;10.25;10.25;10.25
+2031;Valid 2;15.75;15.75;15.75
+2032;Erro Grave;Texto;Texto;Texto
+2033;Quase;10.0;10.0;20.01
+2034;Ponto;10.0001;10.0002;10.0003
+2035;OK;18.9;18.8;18.7
