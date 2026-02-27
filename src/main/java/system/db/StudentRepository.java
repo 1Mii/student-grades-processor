@@ -13,16 +13,14 @@ import system.structs.Student;
 public class StudentRepository {
 
     public DataExtracted save(List<Student> students) {
-        // IA também ajudou no seguinte: ON CONFLICT (num_mec) DO NOTHING faz com que que a transação nao fique considerada como abortada 
-        // (sem isto como ficava abortada o programa só partia)
+
         String studentSQL = "INSERT INTO Students (num_mec, first_name, last_name) VALUES (?, ?, ?) ON CONFLICT (num_mec) DO NOTHING";
         String gradeSQL = "INSERT INTO Grades (student_id, exam, grade) VALUES (?, ?, ?)";
         int invalid_records = 0;
         int valid_records = 0;
 
         try (Connection connection = DatabaseConnection.getConnection()) {
-            // IA recomenda assim para poder ter mais controle sobre as transações
-            // Entendo neste problema mas se tivesse feito SPs acho que já nao seria necessário talvez
+
             connection.setAutoCommit(false); 
 
             try (PreparedStatement studentStmt = connection.prepareStatement(studentSQL, PreparedStatement.RETURN_GENERATED_KEYS);
