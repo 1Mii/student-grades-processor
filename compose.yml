@@ -14,14 +14,14 @@ services:
     depends_on:
       - db
     volumes:
-      - ./data:/code/data
+      - ./src/main/resources:/src/main/resources
     environment:
       DB_HOST: db
       DB_PORT: 5432
       DB_NAME: db_lab1
       DB_USER: user_lab1
       DB_PASSWORD: password_lab1
-      DATA_PATH: /code/data/
+      DATA_PATH: /src/main/resources/
     stdin_open: true
     tty: true
     

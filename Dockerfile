@@ -1,9 +1,12 @@
-FROM eclipse-temurin:17-jdk
-WORKDIR /code 
-RUN apt-get update && apt-get install -y wget
-RUN mkdir -p lib
-RUN wget https://jdbc.postgresql.org/download/postgresql-42.7.10.jar -O ./lib/postgresql.jar
-COPY src/ ./src/
-RUN javac -d bin -cp lib/postgresql.jar src/db/*.java src/structs/*.java src/utils/*.java src/AppOperator.java
-CMD ["java", "-cp", "bin:lib/postgresql.jar", "AppOperator"]
+FROM maven:3.9-eclipse-temurin-17 AS build
+WORKDIR /build
+COPY pom.xml .
+COPY src ./src
+RUN mvn clean package
+
+FROM eclipse-temurin:17-jre
+WORKDIR /code
+COPY --from=build /build/target/java-app-1.0-SNAPSHOT-jar-with-dependencies.jar ./java-app.jar
+CMD ["java", "-jar", "java-app.jar"]
+
 

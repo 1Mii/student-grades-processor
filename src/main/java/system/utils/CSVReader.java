@@ -1,13 +1,13 @@
-package utils;
+package system.utils;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
 
-import structs.DataExtracted;
-import structs.Grade;
-import structs.Student;
+import system.structs.DataExtracted;
+import system.structs.Grade;
+import system.structs.Student;
 
 public class CSVReader implements Reader {
 

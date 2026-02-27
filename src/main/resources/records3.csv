@@ -1,0 +1,37 @@
+3001;Primeiro Aluno;10.55;10.55;10.55
+3001;Repetido MEC;15.0;15.0;15.0
+3002;Alexandre Santos;12.123;12.123;12.123
+3003;Beatriz Costa;14.44;14.44;14.44
+3004;Carlos Sousa;16.66;16.66;16.66
+3005;Daniela Paiva;18.88;18.88;18.88
+3006;Eduardo Jorge;20.0;20.0;20.0
+3002;Repetido Novamente;0.0;0.0;0.0
+3007;Filipa Melo;11.15;11.25;11.35
+3008;Gabriel Lima;13.01;13.02;13.03
+3009;Helena Vaz;15.5;15.55;15.6
+3010;Igor Gomes;17.77;17.88;17.99
+3011;Joana Ribeiro;19.1;19.2;19.3
+3012;Kevin Matos;9.99;9.99;9.99
+3013;Laura Pires;7.5;7.5;7.5
+3014;Miguel Alves;5.25;5.5;5.75
+3015;Nuno Fonseca;3.33;3.33;3.33
+3016;Olivia Dias;1.01;1.02;1.03
+3017;Pedro Cruz;2.5;4.5;6.5
+3018;Queluz Bento;8.2;10.4;12.6
+3019;Rita Rocha;14.1;16.2;18.3
+3020;Simao Tavares;11.11;13.13;15.15
+3021;Teresa Bento;10.05;10.05;10.05
+3022;Ulisses Melo;12.99;12.99;12.99
+3023;Vasco Matos;14.5;14.5;14.5
+3024;Xavier Pires;16.7;16.7;16.7
+3025;Yuri Alves;18.2;18.2;18.2
+3026;Zelia Fonseca;19.95;19.95;19.95
+3027;MEC Invalido;Texto;10.0;10.0
+3028;Nota Invalida;10.0;100.0;10.0
+3029;Nome Vazio;;10.5;10.5;10.5
+3030;Separador Errado,10.5,10.5,10.5
+3031;Valid A;10.8;10.8;10.8
+3032;Valid B;11.2;11.2;11.2
+3033;Duplicado Final;3001;Erro;10.0;10.0;10.0
+3034;Fim;19.9;19.9;19.9
+3035;Ultimo;10.12;11.23;12.34

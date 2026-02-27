@@ -1,4 +1,4 @@
-package structs;
+package system.structs;
 
 public class Grade {
     private int id;

@@ -1,4 +1,4 @@
-package structs;
+package system.structs;
 import java.util.List;
 
 public class Student {

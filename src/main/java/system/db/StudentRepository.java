@@ -1,4 +1,4 @@
-package db;
+package system.db;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -6,9 +6,9 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-import structs.DataExtracted;
-import structs.Grade;
-import structs.Student;
+import system.structs.DataExtracted;
+import system.structs.Grade;
+import system.structs.Student;
 
 public class StudentRepository {
 

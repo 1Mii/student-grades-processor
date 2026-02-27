@@ -1,15 +1,17 @@
+package system;
+
 import java.io.IOException;
 import java.nio.file.Paths;
 import java.util.List;
 import java.util.Scanner;
 
-import db.DatabaseConnection;
-import db.StudentRepository;
-import structs.DataExtracted;
-import structs.Grade;
-import structs.Student;
-import utils.CSVReader;
-import utils.Reader;
+import system.db.DatabaseConnection;
+import system.db.StudentRepository;
+import system.structs.DataExtracted;
+import system.structs.Grade;
+import system.structs.Student;
+import system.utils.CSVReader;
+import system.utils.Reader;
 
 public class AppOperator {
     private final StudentRepository repo;
