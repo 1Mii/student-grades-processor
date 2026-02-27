@@ -65,7 +65,7 @@ This project was implemented as part of an IES laboratory assignment — at the 
 
 ```bash
 # from project root
-docker compose up --build
+docker compose up --build -d
 ```
 
 * `docker-compose` will:
