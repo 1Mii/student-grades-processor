@@ -1,0 +1,51 @@
+/*used ai*/
+.info-card__title {
+    margin-bottom: 14px;
+    font-size: 1.25rem;
+  }
+  
+  .info-card__subtitle {
+    color: var(--muted);
+    margin-bottom: 16px;
+  }
+  
+  .info-meta {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    margin-bottom: 18px;
+  }
+  
+  .info-meta__item {
+    background: var(--surface-soft);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 10px 12px;
+  }
+  
+  .info-grades__title {
+    margin-bottom: 10px;
+    font-size: 1.05rem;
+  }
+  
+  .info-grade-list {
+    list-style: none;
+    display: grid;
+    gap: 10px;
+  }
+  
+  .info-grade-list__item {
+    padding: 12px 14px;
+    background: var(--surface-soft);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+  }
+  
+  .info-total {
+    margin-top: 16px;
+    font-weight: 700;
+  }
+  
+  .info-empty {
+    color: var(--muted);
+  }

@@ -1,0 +1,58 @@
+/*used ai*/
+.upload-card__title {
+    margin-bottom: 14px;
+    font-size: 1.25rem;
+  }
+  
+  .upload-form {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 14px;
+  }
+  
+  .upload-form__input {
+    flex: 1;
+    min-width: 240px;
+    padding: 10px 12px;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    background: var(--surface-soft);
+  }
+  
+  .upload-form__button {
+    padding: 10px 16px;
+    border: none;
+    border-radius: 10px;
+    background: var(--primary);
+    color: #fff;
+    font-weight: 600;
+    transition: background 0.2s ease;
+  }
+  
+  .upload-form__button:hover {
+    background: var(--primary-hover);
+  }
+  
+  .upload-form__button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+  
+  .upload-stats {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    color: var(--muted);
+  }
+  
+  .upload-stats__item strong {
+    color: var(--text);
+  }
+  
+  .upload-file-name {
+    margin-top: 8px;
+    color: var(--muted);
+    font-size: 0.95rem;
+  }

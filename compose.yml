@@ -7,21 +7,30 @@ services:
       POSTGRES_USER: user_lab1
       POSTGRES_PASSWORD: password_lab1
     volumes:
-      - ./setup.sql:/docker-entrypoint-initdb.d/setup.sql
+      - ./postgres_data:/var/lib/postgresql/data
 
-  app: 
-    build: .
+  api: 
+    build: ./java-app
     depends_on:
       - db
-    volumes:
-      - ./src/main/resources:/src/main/resources
+    ports: 
+      - "8080:8080"
     environment:
-      DB_HOST: db
+      DB_HOST: db # isto deveria estar numa envionmental variable eu sei, apenas está assim para melhor manuseio (só para nao estar a alterar tudo)
       DB_PORT: 5432
       DB_NAME: db_lab1
       DB_USER: user_lab1
       DB_PASSWORD: password_lab1
-      DATA_PATH: /src/main/resources/
     stdin_open: true
     tty: true
-    
+
+  frontend:
+    build: ./frontend
+    restart: on-failure
+    ports:
+      - "8000:3000"
+    environment:
+      REACT_APP_API_URL: ${API_URL} 
+      WDS_SOCKET_PORT: 8000 # host port
+    volumes: 
+      - ./frontend/app:/app

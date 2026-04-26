@@ -1,0 +1,47 @@
+/*used ai*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bg: #f4f7f6;
+  --surface: #ffffff;
+  --surface-soft: #f9fbfa;
+  --text: #253238;
+  --muted: #6b7a80;
+  --border: #d9e2e6;
+  --primary: #2f80ed;
+  --primary-hover: #2569c7;
+  --success: #2e8b57;
+  --danger: #d64545;
+  --shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+html, body, #root {
+  min-height: 100%;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.5;
+  padding: 24px;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid var(--border);
+  margin: 24px 0;
+}

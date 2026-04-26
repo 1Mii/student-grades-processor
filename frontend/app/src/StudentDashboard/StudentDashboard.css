@@ -1,0 +1,41 @@
+/*used ai*/
+.dashboard-card__title {
+    margin-bottom: 14px;
+    font-size: 1.25rem;
+  }
+  
+  .dashboard-table {
+    width: 100%;
+    border-collapse: collapse;
+    overflow: hidden;
+    border-radius: 12px;
+  }
+  
+  .dashboard-table thead {
+    background: #eef4f7;
+  }
+  
+  .dashboard-table th,
+  .dashboard-table td {
+    padding: 12px 14px;
+    text-align: left;
+    border-bottom: 1px solid var(--border);
+  }
+  
+  .dashboard-table tbody tr {
+    transition: background 0.2s ease;
+  }
+  
+  .dashboard-table tbody tr:hover {
+    background: #f7fbff;
+  }
+  
+  .dashboard-table__row {
+    cursor: pointer;
+  }
+  
+  .dashboard-table__empty {
+    text-align: center;
+    color: var(--muted);
+    padding: 18px;
+  }

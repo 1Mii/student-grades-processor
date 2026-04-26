@@ -1,0 +1,9 @@
+FROM node:lts-alpine3.23
+WORKDIR /app
+ARG REACT_APP_API_URL
+ENV REACT_APP_API_URL=${REACT_APP_API_URL}
+COPY ./app/package*.json ./
+RUN npm install
+COPY ./app .
+EXPOSE 3000
+CMD ["npm", "start"]
